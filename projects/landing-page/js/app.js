@@ -22,7 +22,7 @@
 
 const navbarList = document.getElementById('navbar__list');
 const scrollToTop = document.getElementById('scroll-to-top');
-let sections = document.getElementsByName('section');
+let sections = document.getElementsByTagName('section');
 
 /**
  * End Global Variables
