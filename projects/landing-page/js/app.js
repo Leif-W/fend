@@ -66,4 +66,20 @@ document.addEventListener('click', () => window.scrollTo(0, 0));
 
 // Scroll to section on link click
 
+// Set section intersection observer
+var observer = new IntersectionObserver(
+  function (entries) {
+    if (entries[0].isIntersecting === true) {
+      entries[0].target.classList.add('your-active-class');
+    } else {
+      entries[0].target.classList.remove('your-active-class');
+    }
+  },
+  { threshold: [0.5] }
+);
+
+for (let i = 0; i < sections.length; i++) {
+  observer.observe(sections[i]);
+}
+
 // Set sections as active
