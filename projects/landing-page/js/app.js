@@ -44,6 +44,7 @@ for (let i = 0; i < sections.length; i++) {
 
   a_.href = '#' + sections[i].id;
   a_.textContent = sections[i].dataset.nav;
+  a_.className = 'menu__link';
 
   li_.appendChild(a_);
   navbarList.appendChild(li_);
