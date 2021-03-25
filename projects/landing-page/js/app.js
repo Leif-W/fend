@@ -76,7 +76,7 @@ var observer = new IntersectionObserver(
       entries[0].target.classList.remove('your-active-class');
     }
   },
-  { threshold: [0.5] }
+  { threshold: [0.7] }
 );
 
 for (let i = 0; i < sections.length; i++) {
